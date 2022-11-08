@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #18d26e;
+  color: goldenrod;
   transition: 0.5s;
   text-decoration: none;
 }
@@ -30,6 +30,7 @@ a:focus {
 p {
   padding: 0;
   margin: 0 0 30px 0;
+  color: #fff;
 }
 
 h1,
@@ -54,7 +55,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #18d26e;
+  background: goldenrod;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -95,7 +96,7 @@ h6 {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #f2f2f2;
-  border-top: 6px solid #18d26e;
+  border-top: 6px solid goldenrod;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -149,8 +150,8 @@ h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
-  padding-left: 10px;
-  border-left: 4px solid #18d26e;
+  padding-top: 15px;
+  padding-left: 20px;
 }
 
 #header .logo a {
@@ -158,7 +159,7 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 90px;
 }
 
 @media (max-width: 992px) {
@@ -215,7 +216,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #18d26e;
+  color: goldenrod;
 }
 
 .navbar .dropdown ul {
@@ -250,7 +251,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #18d26e;
+  color: goldenrod;
 }
 
 .navbar .dropdown:hover>ul {
@@ -424,12 +425,12 @@ h6 {
   transition: 0.5s;
   margin: 10px;
   color: #fff;
-  background: #18d26e;
+  background: goldenrod;
 }
 
 #hero .btn-get-started:hover {
   background: #fff;
-  color: #18d26e;
+  color: goldenrod;
 }
 
 /*--------------------------------------------------------------
@@ -468,7 +469,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #18d26e;
+  background: goldenrod;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -557,7 +558,7 @@ section {
 #testimonials .testimonial-item .testimonial-img {
   width: 120px;
   border-radius: 50%;
-  border: 4px solid #fff;
+  border: 4px solid goldenrod;
   margin: 0 auto;
 }
 
@@ -610,12 +611,12 @@ section {
   height: 12px;
   /* background-color: #fff; */
   opacity: 1;
-  border: 1px solid #18d26e;
+  border: 1px solid goldenrod;
 }
 
-/* #testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  /* background-color: #18d26e; 
-} */
+#testimonials .swiper-pagination .swiper-pagination-bullet-active {
+   background-color: goldenrod; 
+} 
 
 /* Contact Section
 --------------------------------*/
@@ -632,7 +633,7 @@ section {
   font-size: 48px;
   display: inline-block;
   margin-bottom: 10px;
-  color: #18d26e;
+  color: goldenrod;
 }
 
 #contact .contact-info address,
@@ -654,7 +655,7 @@ section {
 }
 
 #contact .contact-info a:hover {
-  color: #18d26e;
+  color: goldenrod;
 }
 
 #contact .contact-address,
@@ -701,7 +702,7 @@ section {
 #contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: goldenrod;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -721,7 +722,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid goldenrod;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -741,11 +742,11 @@ section {
 
 #contact .php-email-form input::focus,
 #contact .php-email-form textarea::focus {
-  background-color: #18d26e;
+  background-color: goldenrod;
 }
 
 #contact .php-email-form button[type=submit] {
-  background: #18d26e;
+  background: goldenrod;
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -809,12 +810,12 @@ section {
 }
 
 .blog .entry .entry-title a:hover {
-  color: #18d26e;
+  color: goldenrod;
 }
 
 .blog .entry .entry-meta {
   margin-bottom: 15px;
-  color: #18d26e;
+  color: goldenrod;
 }
 
 .blog .entry .entry-meta ul {
@@ -860,11 +861,11 @@ section {
   transition: 0.3s;
   font-size: 14px;
   border-radius: 50px;
-  border: 2px solid #18d26e;
+  border: 2px solid goldenrod;
 }
 
 .blog .entry .entry-content .read-more a:hover {
-  background: #18d26e;
+  background: goldenrod;
   color: #fff;
 }
 
@@ -899,7 +900,7 @@ section {
   top: 0;
   bottom: 0;
   width: 3px;
-  background-color: #18d26e;
+  background-color: goldenrod;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -910,7 +911,7 @@ section {
 }
 
 .blog .entry .entry-footer i {
-  color: #18d26e;
+  color: goldenrod;
   display: inline;
 }
 
@@ -920,7 +921,7 @@ section {
 }
 
 .blog .entry .entry-footer a:hover {
-  color: #18d26e;
+  color: goldenrod;
 }
 
 .blog .entry .entry-footer .cats {
@@ -993,7 +994,7 @@ section {
 }
 
 .blog .blog-author .social-links a:hover {
-  color: #18d26e;
+  color: goldenrod;
 }
 
 .blog .blog-author p {
@@ -1039,7 +1040,7 @@ section {
 
 .blog .blog-comments .comment h5 .reply {
   padding-left: 10px;
-  color: #18d26e;
+  color: goldenrod;
 }
 
 .blog .blog-comments .comment h5 .reply i {
@@ -1102,7 +1103,7 @@ section {
   border-radius: 50px;
   padding: 10px 30px;
   border: 0;
-  background-color: #18d26e;
+  background-color: goldenrod;
 }
 
 .blog .blog-comments .reply-form .btn-primary:hover {
@@ -1110,7 +1111,7 @@ section {
 }
 
 .blog .blog-pagination {
-  color: #18d26e;
+  color: goldenrod;
 }
 
 .blog .blog-pagination ul {
@@ -1126,7 +1127,7 @@ section {
 }
 
 .blog .blog-pagination li a {
-  color: #18d26e;
+  color: goldenrod;
   padding: 6px 20px;
   display: flex;
   align-items: center;
@@ -1137,7 +1138,7 @@ section {
 
 .blog .blog-pagination li.active,
 .blog .blog-pagination li:hover {
-  background: #18d26e;
+  background: goldenrod;
   border-radius: 50px;
 }
 
@@ -1195,7 +1196,7 @@ section {
   font-size: 16px;
   padding: 0 30px;
   margin: -1px;
-  background: #18d26e;
+  background: goldenrod;
   color: #fff;
   transition: 0.3s;
   line-height: 0;
@@ -1225,7 +1226,7 @@ section {
 }
 
 .blog .sidebar .categories ul a:hover {
-  color: #18d26e;
+  color: goldenrod;
 }
 
 .blog .sidebar .categories ul a span {
@@ -1255,7 +1256,7 @@ section {
 }
 
 .blog .sidebar .recent-posts h4 a:hover {
-  color: #18d26e;
+  color: goldenrod;
 }
 
 .blog .sidebar .recent-posts time {
@@ -1284,7 +1285,7 @@ section {
   font-size: 14px;
   padding: 6px 20px;
   margin: 0 6px 8px 0;
-  border: 1px solid #18d26e;
+  border: 1px solid goldenrod;
   display: inline-block;
   border-radius: 50px;
   transition: 0.3s;
@@ -1292,7 +1293,7 @@ section {
 
 .blog .sidebar .tags ul a:hover {
   color: #fff;
-  background: #18d26e;
+  background: goldenrod;
 }
 
 .blog .sidebar .tags ul a span {

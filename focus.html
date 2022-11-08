@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="assets/css/style.css" rel="stylesheet">
         <title>Meditation For Well-Being</title>
         <style>
             #buttonRain
@@ -67,12 +68,12 @@
                 padding-left: 5%;
                 padding-right: 20%;
             }
-            body 
+            /* body 
             {
                 background-image: url('https://images.unsplash.com/photo-1575931953324-fcac7094999e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c29vdGhpbmd8ZW58MHx8MHx8&w=1000&q=80');
                 background-repeat: no-repeat;
                 background-size: cover;
-            }
+            } */
             p
             {
                 color: antiquewhite;
@@ -83,10 +84,6 @@
         <audio id = RainAudio loop>
             <source src ="assets\Rain.wav">
         </audio>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-heart" viewBox="0 0 16 16">
-            <path d="M8 6.982C9.664 5.309 13.825 8.236 8 12 2.175 8.236 6.336 5.309 8 6.982Z"/>
-            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.707L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.646a.5.5 0 0 0 .708-.707L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
-          </svg>
         <audio id = BirdsAudio loop>
             <source src ="assets\birds.mp3">
         </audio>
@@ -115,7 +112,7 @@
                 var x = document.getElementById("RainAudio");
                 if(flagr===0)
                 {
-                    document.body.style.background = "lightblue";
+                    //document.body.style.background = "lightblue";
                     x.play();
                     flagr=1;
                 }
@@ -127,48 +124,48 @@
             }
             function Birds()
             {
-                document.body.style.background = "rgb(138, 67, 17)";
+                //document.body.style.background = "rgb(138, 67, 17)";
                 var x = document.getElementById("BirdsAudio");
                 x.play();
             }
             function Leaves()
             {
-                document.body.style.background = "rgb(38, 90, 38)";
+                //document.body.style.background = "rgb(38, 90, 38)";
                 var x = document.getElementById("LeavesAudio");
                 x.play();
             }
             function TempleBell()
             {
-                document.body.style.background = "rgb(124, 124, 24)";
+               // document.body.style.background = "rgb(124, 124, 24)";
                 var x = document.getElementById("TempleBellAudio");
                 x.play();
             }
             function SingingBowl()
             {
-                document.body.style.background = "rgb(159, 121, 23)";
+                //document.body.style.background = "rgb(159, 121, 23)";
                 var x = document.getElementById("SingingBowlAudio");
                 x.play();
             }function Waterfall()
             {
-                document.body.style.background = "rgb(188, 181, 181)";
+                //document.body.style.background = "rgb(188, 181, 181)";
                 var x = document.getElementById("WaterfallAudio");
                 x.play();
             }
             function Santoor()
             {
-                document.body.style.background = "rgb(77, 37, 9)";
+                //document.body.style.background = "rgb(77, 37, 9)";
                 var x = document.getElementById("SantoorAudio");
                 x.play();
             }
             function Waves()
             {
-                document.body.style.background = "rgb(148, 168, 205)";
+                //document.body.style.background = "rgb(148, 168, 205)";
                 var x = document.getElementById("WavesAudio");
                 x.play();
             }
         </script>
-        <p style="text-align:center;padding-top:5%;font-size:xx-large;font-family:Georgia, 'Times New Roman', Times, serif;font-style: italic;">Click To Calm</p>
-        <p  style="text-align:center;padding-top:1%;font-size:xx-large;font-family:Georgia, 'Times New Roman', Times, serif;font-style: italic;">Songs Of Nature</p>
+        <p style="text-align:center;padding-top:5%;font-size:xx-large;">Click To Calm</p>
+        <p  style="text-align:center;padding-top:1%;font-size:xx-large;">Songs Of Nature</p>
         <input id ="buttonRain" type = "image" src="https://media.istockphoto.com/id/1257951336/photo/transparent-umbrella-under-rain-against-water-drops-splash-background-rainy-weather-concept.jpg?s=612x612&w=0&k=20&c=lNvbIw1wReb-owe7_rMgW8lZz1zElqs5BOY1AZhyRXs=" onclick="Rain()">
         <input id="buttonBirds" type="image" src="https://images.theconversation.com/files/482351/original/file-20220901-15-dnl1i1.jpg?ixlib=rb-1.1.0&rect=46%2C0%2C5184%2C3437&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip" onclick="Birds()" />
         <input id="buttonLeaves" type="image" src="https://storage.googleapis.com/kaggle-competitions/kaggle/5408/media/bigleaves.jpg" onclick="Leaves()"/>

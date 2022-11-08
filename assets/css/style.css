@@ -1238,3 +1238,36 @@ section {
   font-size: 14px;
 }
 
+div.buttons {
+  margin: 10%;
+  text-align: center;
+}
+.butn-hover {
+  width: 80px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 30px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.butn-hover:hover {
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.butn-hover:focus {
+  outline: none;
+}
+.butn-hover.color {
+  background-image: linear-gradient(to right, #000000, #000000, goldenrod, #daa520);
+}

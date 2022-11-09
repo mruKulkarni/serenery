@@ -45,6 +45,10 @@ h6 {
   padding: 0;
 }
 
+.fontse{
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -1244,12 +1248,12 @@ div.buttons {
 }
 .butn-hover {
   width: 80px;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 600;
   color: #fff;
   cursor: pointer;
   margin: 20px;
-  height: 30px;
+  height: 35px;
   text-align:center;
   border: none;
   background-size: 300% 100%;
@@ -1271,3 +1275,116 @@ div.buttons {
 .butn-hover.color {
   background-image: linear-gradient(to right, #000000, #000000, goldenrod, #daa520);
 }
+
+/*--------------------------------------------------------------
+# Login
+--------------------------------------------------------------*/
+label{
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+button{
+  border: 5px solid goldenrod;
+}
+
+a.padd{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+#login .container{
+  padding: 10px 0px;
+  width: 800px;
+  /* border: 5px solid goldenrod; */
+  border-radius: 30px;
+}
+
+#login{
+  padding: 10%;
+}
+
+#login .container #login-row #login-column #login-box #login-form .head{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color:goldenrod;
+  padding:0px 0px 10px;
+  font-size: 48px;
+}
+
+#login .container #login-row #login-column #login-box #login-form .form-group .padd{
+  padding:30px 0px 10px;
+  font-size: 18px;
+}
+
+#login .container #login-row #login-column #login-box #login-form .form-group .padd .padd1{
+  padding-left:150px;
+  font-size: 18px;
+}
+
+#login .container #login-row #login-column #login-box #login-form .form-group .butn-hover{
+  /* background-color: goldenrod;
+  color: white;
+  margin: 10px 0px 15px;
+  font-size: 18px; */
+    /* width: 400px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 35px; */
+    /* text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    margin: 10%;
+    text-align: center; */
+    /* background-image: linear-gradient(to right, #000000, #000000, goldenrod, #daa520); */
+} 
+
+/*--------------------------------------------------------------
+# signup
+--------------------------------------------------------------*/
+
+a.padd{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+#signup .container #login-row #login-column #login-box #login-form .head{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color:goldenrod;
+  padding:0px 0px 10px;
+  font-size: 48px;
+}
+
+#signup .container{
+  padding: 10px 0px;
+  width: 800px;
+  /* border: 5px solid goldenrod; */
+  border-radius: 30px;
+}
+
+#signup{
+  padding: 6%;
+}
+
+#signup .container #login-row #login-column #login-box #login-form .form-group .padd{
+  padding:20px 0px 10px;
+  font-size: 18px;
+}
+
+#signup .container #login-row #login-column #login-box #login-form .form-group .btn{
+  background-color: goldenrod;
+  color: #fff;
+  margin: 30px 0px;
+  font-size: 18px;
+} 

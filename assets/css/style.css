@@ -1323,30 +1323,13 @@ a.padd{
   font-size: 18px;
 }
 
-#login .container #login-row #login-column #login-box #login-form .form-group .butn-hover{
-  /* background-color: goldenrod;
+
+#login .container #login-row #login-column #login-box #login-form .form-group .butn{
+  background-color: goldenrod;
   color: white;
   margin: 10px 0px 15px;
-  font-size: 18px; */
-    /* width: 400px;
-    font-size: 13px;
-    font-weight: 600;
-    color: #fff;
-    cursor: pointer;
-    margin: 20px;
-    height: 35px; */
-    /* text-align:center;
-    border: none;
-    background-size: 300% 100%;
-    
-    border-radius: 50px;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-    margin: 10%;
-    text-align: center; */
-    /* background-image: linear-gradient(to right, #000000, #000000, goldenrod, #daa520); */
-} 
+  font-size: 18px;
+}
 
 /*--------------------------------------------------------------
 # signup

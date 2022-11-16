@@ -5,6 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
+
+    <script type="text/javascript">
+      function myalert()
+      {
+          alert("Successfully submitted");
+      }
+    </script>
+
+    <style>
+      label:focus {
+      color:goldenrod;
+      outline: 2px goldenrod;  
+      }
+      label.visited {
+      color:goldenrod;
+      outline: 2px solid goldenrod;  
+      }
+    </style>
       <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -50,6 +68,18 @@
           </div>
     
         </div>
-      </header><!-- End Header -->
+      </header><!-- End Header --><br><br><br><br><br><br><br><br>
+      <h3 style="color:aliceblue;font-family:Georgia" ><center><i>To live a creative life &nbsp;<br>we must lose our fear of being wrong</i></center></h3><br>
+      <div class="login-form">
+      <form style="margin:auto;width:500px;" onsubmit="myalert()">
+          <fieldset style="border-color: azure;border-width: 10px;"><br>
+          <label for="fname"><b>Name</b></label><br>
+          <input type="text" id="fname" name="fname" onchange="this.className=(this.value=='')?'':'visited';" size="50" placeholder=" Name" required><br><br>
+          <label for="email"><b>Email</b></label><br>
+          <input type="email" id="email" name="email" size="50" placeholder=" Email Address" required><br><br>
+          <input type="submit" value="Upload Documents"><br>
+          </fieldset>
+      </form>
+      <div>   
 </body>
 </html>

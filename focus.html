@@ -1,88 +1,54 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+      <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+        <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
         <link href="assets/css/style.css" rel="stylesheet">
         <title>Meditation For Well-Being</title>
-        <style>
-            #buttonRain
-            {
-                width: 10%;
-                height: 14%;
-                padding-top: 5%;
-                padding-left: 12%;
-                padding-right: 3%;
-            }
-            #buttonBirds
-            {
-                width: 10%;
-                height: 12%;
-                padding-top: 5%;
-                padding-left: 3%;
-                padding-right: 3%;
-            }
-            #buttonLeaves
-            {
-                width: 10%;
-                height: 12%;
-                padding-top: 5%;
-                padding-left: 3%;
-                padding-right: 3%;
-            }
-            #buttonTempleBell
-            {
-                width: 10%;
-                height: 12%;
-                padding-top: 5%;
-                padding-left: 3%;
-                padding-right: 3%;
-            }
-            #buttonSingingBowl
-            {
-                width: 10%;
-                height: 12%;
-                padding-top: 5%;
-                padding-left: 3%;
-                padding-right: 12%;
-            }
-            #buttonWaterfall
-            {
-                width: 10%;
-                height: 12%;
-                padding-top:3%;
-                padding-left: 23%;
-                padding-right: 5%;
-            }
-            #buttonSantoor
-            {
-                width: 10%;
-                height: 12%;
-                padding-top: 3%;
-                padding-left: 5%;
-                padding-right: 5%;
-            }
-            #buttonWaves
-            {
-                width: 10%;
-                height: 12%;
-                padding-top: 3%;
-                padding-left: 5%;
-                padding-right: 20%;
-            }
-            /* body 
-            {
-                background-image: url('https://images.unsplash.com/photo-1575931953324-fcac7094999e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c29vdGhpbmd8ZW58MHx8MHx8&w=1000&q=80');
-                background-repeat: no-repeat;
-                background-size: cover;
-            } */
-            p
-            {
-                color: antiquewhite;
-            }
-            </style>
     </head>
     <body>
+        <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+            <div class="container-fluid">
+        
+              <div class="row justify-content-center align-items-center">
+                <div class="col-xl-12 d-flex align-items-center justify-content-between">
+                  <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid" width="250" height="100"></a>
+        
+                  <link href="assets/css/style.css" rel="stylesheet">
+                  <nav id="navbar" class="navbar">
+                    <ul>
+                      <li><a class="nav-link " href="quiz.html">Test</a></li>
+                      <li><a class="nav-link" href="appointment.html">Appointment</a></li>
+                      <li><a class="nav-link" href="meditation.html">Meditation</a></li>
+                      <li><a class="nav-link active buttons fontse" href="focus.html">Focus</a></li>
+                      <li><a class="nav-link" href="navya.html">Navya</a></li>
+                      <li><a class="nav-link" href="therapist.html">Are you a Therapist?</a></li>
+                      <li><a class="nav-link" href="login.html"><button class="butn-hover color">LOGIN</button></a></li>
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                  </nav><!-- .navbar -->
+                </div>
+              </div>
+            </div>
+          </header>
         <audio id = RainAudio loop>
-            <source src ="assets\Rain.wav">
+            <source src ="assets/Rain.wav">
         </audio>
         <audio id = BirdsAudio loop>
             <source src ="assets\birds.mp3">
@@ -106,6 +72,7 @@
             <source src ="assets\waves.mp3">
         </audio>
         <script>
+
             var flagr=0;
             function Rain()
             {
@@ -122,59 +89,126 @@
                     flagr=0;
                 }
             }
+             
+            var flagr=0;
             function Birds()
             {
-                //document.body.style.background = "rgb(138, 67, 17)";
                 var x = document.getElementById("BirdsAudio");
-                x.play();
+                if(flagr===0)
+                {
+                    //document.body.style.background = "lightblue";
+                    x.play();
+                    flagr=1;
+                }
+                else
+                {
+                    x.pause();
+                    flagr=0;
+                }
             }
+            var flagr=0;
             function Leaves()
             {
-                //document.body.style.background = "rgb(38, 90, 38)";
                 var x = document.getElementById("LeavesAudio");
-                x.play();
+                if(flagr===0)
+                {
+                    //document.body.style.background = "lightblue";
+                    x.play();
+                    flagr=1;
+                }
+                else
+                {
+                    x.pause();
+                    flagr=0;
+                }
             }
+            var flagr=0;
             function TempleBell()
             {
-               // document.body.style.background = "rgb(124, 124, 24)";
                 var x = document.getElementById("TempleBellAudio");
-                x.play();
+                if(flagr===0)
+                {
+                    //document.body.style.background = "lightblue";
+                    x.play();
+                    flagr=1;
+                }
+                else
+                {
+                    x.pause();
+                    flagr=0;
+                }
             }
             function SingingBowl()
             {
-                //document.body.style.background = "rgb(159, 121, 23)";
                 var x = document.getElementById("SingingBowlAudio");
-                x.play();
-            }function Waterfall()
+                if(flagr===0)
+                {
+                    //document.body.style.background = "lightblue";
+                    x.play();
+                    flagr=1;
+                }
+                else
+                {
+                    x.pause();
+                    flagr=0;
+                }
+            }    
+            function Waterfall()
             {
-                //document.body.style.background = "rgb(188, 181, 181)";
                 var x = document.getElementById("WaterfallAudio");
-                x.play();
+                if(flagr===0)
+                {
+                    //document.body.style.background = "lightblue";
+                    x.play();
+                    flagr=1;
+                }
+                else
+                {
+                    x.pause();
+                    flagr=0;
+                }
             }
             function Santoor()
             {
-                //document.body.style.background = "rgb(77, 37, 9)";
                 var x = document.getElementById("SantoorAudio");
-                x.play();
+                if(flagr===0)
+                {
+                    //document.body.style.background = "lightblue";
+                    x.play();
+                    flagr=1;
+                }
+                else
+                {
+                    x.pause();
+                    flagr=0;
+                }
             }
             function Waves()
             {
-                //document.body.style.background = "rgb(148, 168, 205)";
                 var x = document.getElementById("WavesAudio");
-                x.play();
+                if(flagr===0)
+                {
+                    //document.body.style.background = "lightblue";
+                    x.play();
+                    flagr=1;
+                }
+                else
+                {
+                    x.pause();
+                    flagr=0;
+                }
             }
         </script>
-        <p style="text-align:center;padding-top:5%;font-size:xx-large;">Click To Calm</p>
-        <p  style="text-align:center;padding-top:1%;font-size:xx-large;">Songs Of Nature</p>
-        <input id ="buttonRain" type = "image" src="https://media.istockphoto.com/id/1257951336/photo/transparent-umbrella-under-rain-against-water-drops-splash-background-rainy-weather-concept.jpg?s=612x612&w=0&k=20&c=lNvbIw1wReb-owe7_rMgW8lZz1zElqs5BOY1AZhyRXs=" onclick="Rain()">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <input id="buttonRain" type="image" src="https://media.istockphoto.com/id/1257951336/photo/transparent-umbrella-under-rain-against-water-drops-splash-background-rainy-weather-concept.jpg?s=612x612&w=0&k=20&c=lNvbIw1wReb-owe7_rMgW8lZz1zElqs5BOY1AZhyRXs=" onclick="Rain()">
         <input id="buttonBirds" type="image" src="https://images.theconversation.com/files/482351/original/file-20220901-15-dnl1i1.jpg?ixlib=rb-1.1.0&rect=46%2C0%2C5184%2C3437&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip" onclick="Birds()" />
         <input id="buttonLeaves" type="image" src="https://storage.googleapis.com/kaggle-competitions/kaggle/5408/media/bigleaves.jpg" onclick="Leaves()"/>
         <input id="buttonTempleBell" type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgc2zqJeyNR-2hJjap4TTkt1fTuapabvrePg&usqp=CAU" onclick="TempleBell()"/>
         <input id="buttonSingingBowl" type="image" src="https://image.shutterstock.com/image-photo/tibetan-singing-bowl-sanskrit-engraving-260nw-1524459323.jpg"onclick="SingingBowl()" />
-        <p style="font-size:large">&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Rain&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;Birds&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Leaves&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;Temple Bell&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;Singing Bowl</p>
+        <p style="font-size:large">&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Rain&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&ensp;Birds&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Leaves&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;Temple Bells&ensp;&emsp;&emsp;&emsp;&emsp;&ensp;Singing Bowl</p>
         <input id="buttonWaterfall" type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcfsxmulUgaHFqQi7CA7uLxetN_CRN0W_ffg&usqp=CAU"onclick="Waterfall()" />
         <input id="buttonSantoor" type="image" src="https://images.dinamani.com/uploads/user/imagelibrary/2017/12/27/original/santoor.jpg"onclick="Santoor()" />
         <input id="buttonWaves" type="image" src="https://images.unsplash.com/photo-1498330177096-689e3fb901ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2F2ZXN8ZW58MHx8MHx8&w=1000&q=80"onclick="Waves()" />
-        <p style="font-size:large">&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Waterfall&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;Santoor&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Waves</p>
+        <p style="font-size:large">&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Waterfall&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;Santoor&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Waves</p>
     </body>
 </html>
